@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: 琪的弈-文章列表
 ---
 
 <div id="articles">
