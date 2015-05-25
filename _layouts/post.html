@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post" id="post_page">
   {% if page.image %}
     <div class="featuredImage">
         <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.image }}" alt="" />
@@ -29,13 +29,25 @@ layout: default
       </a>
     {% endif %} 
   </div>
-  <!-- JiaThis Button BEGIN -->
+</div>
+
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_share_slide jiathis_share_24x24" id="jiathis_share_slide">
+<div class="jiathis_share_slide_top" id="jiathis_share_title"></div>
+<div class="jiathis_share_slide_inner">
 <div class="jiathis_style_24x24">
-  <a class="jiathis_button_tsina"></a>
-  <a class="jiathis_button_weixin"></a>
-  <a class="jiathis_button_cqq"></a>
-  <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<a class="jiathis_button_qzone"></a>
+<a class="jiathis_button_tsina"></a>
+<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+<script type="text/javascript">
+var jiathis_config = {
+  slide:{
+    divid:'post_page',
+    pos:'right'
+  }
+};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>  
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_slide.js" charset="utf-8"></script>
+</div></div></div>
 <!-- JiaThis Button END -->
-</div>
